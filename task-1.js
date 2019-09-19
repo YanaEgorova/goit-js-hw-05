@@ -5,19 +5,14 @@
 // который выводит в консоль значения полей login и email объекта который его вызвал.
 
 const Account = function (login, email) {
-
   this.login = login;
   this.email = email;
-
-
 }
 
-
-
-
-
-
-
+Account.prototype.getInfo = function () {
+  console.log('Login:', this.login);
+  console.log('Email:', this.email);
+}
 
 console.log(Account.prototype.getInfo); // function
 
