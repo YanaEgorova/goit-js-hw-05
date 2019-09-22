@@ -13,11 +13,11 @@ class Storage {
     this.items = items;
   }
 
-  getItems() {
+  get getItems() {
     return this.items;
   }
 
-  addItem(item) {
+  set addItem(item) {
     this.items.push(item);
   }
 
@@ -37,10 +37,10 @@ const storage = new Storage([
   'Антигравитатор',
 ]);
 
-const items = storage.getItems();
+const items = storage.getItems;
 console.log(items); // [ "Нанитоиды", "Пролонгер", "Железные жупи", "Антигравитатор" ]
 
-storage.addItem('Дроид');
+storage.addItem = 'Дроид';
 console.log(storage.items); // [ "Нанитоиды", "Пролонгер", "Железные жупи", "Антигравитатор", "Дроид" ]
 
 storage.removeItem('Пролонгер');
